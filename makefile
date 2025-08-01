@@ -36,7 +36,7 @@ bootstrap: _install-dependencies
 .PHONY: check-for-updates
 check-for-updates: _install-dependencies
 	@echo "🔍 Checking for dependencies updates.."
-	@UPDATES=$$(uv tree --outdated --depth 1 --quiet | grep latest | sed 's/^[├└┬── ]*//'); \
+	@UPDATES=$$(uv --native-tls tree --outdated --depth 1 --quiet | grep latest | sed 's/^[├└┬── ]*//'); \
 		if [ -n "$$UPDATES" ]; then \
 			echo "⚠️  The dependencies below are out of date:"; \
 			echo ""; \
