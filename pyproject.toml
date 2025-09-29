@@ -2,7 +2,7 @@
 name = ""
 version = "0.0.1"
 dependencies = [
-  "magic-wormhole  ==  0.20.0",
+  "magic-wormhole",
 ]
 
 [dependency-groups]
