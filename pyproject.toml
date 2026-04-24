@@ -1,16 +1,8 @@
 [project]
-name = ""
+name = "mwh"
 version = "0.0.1"
-dependencies = [
-  "magic-wormhole",
-]
-
-[dependency-groups]
-dev = []
+dependencies = ["magic-wormhole"]
 
 [tool.uv]
 package = false
-
-[[tool.uv.index]]
-name = "pypi"
-url = "https://pypi.org/simple"
+index = [{ name = "pypi", url = "https://pypi.org/simple" }]
